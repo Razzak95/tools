@@ -1,0 +1,20 @@
+:root {
+    --t-bg: rgb(201, 201, 226);
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    margin-top: auto;
+}
+
+/* sample */
+header, footer {
+    background-color: var(--t-bg);
+    padding: 10px;
+}

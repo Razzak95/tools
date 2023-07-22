@@ -1,0 +1,52 @@
+:root {
+    --input-text-border-color: #d7e6d7;
+}
+
+.string {
+    width: 100%;
+    outline: none;
+    padding: 5px;
+}
+
+.r-btn {
+    outline: none;
+    border: none;
+    background-color: #1a73e8;
+    color: #fff;
+    padding: 8px 10px;
+    border-radius: 3px;
+}
+
+.r-btn:focus {
+    outline: none;
+}
+
+.r-btn:hover {
+    cursor: pointer;
+}
+
+.string-block {
+    padding-bottom: 20px;
+}
+
+/*  */
+.wrapper-controls {
+    display: flex;
+}
+
+.wrapper-controls > div {
+    margin-right: 4px;
+}
+
+.form-text-sm {
+    display: block;
+    width: 100%;
+    border: 1px solid var(--input-text-border-color);
+    padding: 3px 4px;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+.form-text-sm:focus {
+    outline: none;
+}

@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <title>Odoo model builder</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.0/codemirror.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.0/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.0/mode/xml/xml.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.0/mode/python/python.min.js"></script>
+
+
+    <!-- Custom stylesheet -->
+    <link rel="stylesheet" href="static/css/model-builder.css">
+</head>
+
+<body>
+
+    <div class="container py-5">
+        <div class="row no-gutters">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">
+                <div class="nav-left">
+                    <!-- <div>Model Build</div>
+                    <div>String Format</div> -->
+                    <ul>
+                        <li><a class="link nl__item-active" href="#">Model Build</a></li>
+                        <li><a class="link" href="#">String Format</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-9 col-xl-9 p-3">
+                <div>
+                    <h4>Odoo model builder 1.0</h4>
+                    <div class="wrapper-color-line">
+                        <div class="color-line color-line-1"></div>
+                        <div class="color-line color-line-2"></div>
+                        <div class="color-line color-line-3"></div>
+                    </div>
+                </div>
+
+                <div class="fields">
+                    <!-- <div class="wrapper-field">
+                        <span>Click <b>add new field</b> button to start building ...</span>
+                    </div> -->
+                    <div class="pb-3">
+                        <div class="field-label">Model name | <small>Ex. product.template</small></div>
+                        <input id="model-name" type="text" class="form-text" placeholder="product.template" required="1" />
+                    </div>
+                    <!-- <div class="pt-2 pb-3">
+                        <div class="field-label">Model description | <small>Ex. product.template</small></div>
+                        <input id="model-description" type="text" class="form-text" />
+                    </div> -->
+                </div>
+
+                <div class="py-4">
+                    <div class="pt-3 d-flex justify-content-end">
+                        <div class="mr-3">
+                            <button id="add-new-field" class="mbtn bold">Add New Field</button>
+                        </div>
+                        <div>
+                            <button id="save-fields" class="mbtn bold">Generate code</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="wrapper-generated" style="display: none;">
+                    <!-- Generated python code -->
+                    <div>
+                        <h5 class="">Generated python code | <small class="text-muted">Class, model, fields</small></h5>
+                        <textarea id="generated-python-code" class="form-textarea"></textarea>
+                    </div>
+
+                    <!-- Generated code -->
+                    <div class="pt-3">
+                        <h5>Generated xml code | <small class="text-muted">Tree view, form view, action, menuitem,
+                                security</small></h5>
+                        <textarea id="generated-code" class="form-textarea"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="static/js/jquery-3.6.0.min.js"></script>
+    <script src="static/js/popper.min.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+    <script src="static/js/font-awesome.js"></script>
+
+    <!-- Custom Javascript -->
+    <script src="static/js/model-builder.js"></script>
+
+</body>
+
+</html>

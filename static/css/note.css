@@ -1,0 +1,22 @@
+/* CSS Responsive */
+/* CSS Responsive */
+
+@media (max-width: 576px) {
+    /* col */
+}
+
+@media (min-width: 576px) {
+    /* col-sm */
+}
+
+@media (min-width: 768px) {
+    /* col-md */
+}
+
+@media (min-width: 992px) {
+    /* col-lg */
+}
+
+@media (min-width: 1200px) {
+    /* col-xl */
+}
